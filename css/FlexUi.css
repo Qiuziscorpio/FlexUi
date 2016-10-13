@@ -1,0 +1,91 @@
+/*!
+ * 文件名称：FlexUi.css
+ * 文件版本：Version 0.1    2016-10-10
+ * 文件作者：秋子
+ * 编写日期：2016年10月10日
+ * 版权所有：秋子
+ * 企业官网：暂无
+ * 开源协议：MIT License
+ * 文件描述：一切从简，只为了更懒！
+ * 开源地址：https://github.com/Qiuziscorpio/FlexUi.git
+ */
+@charset "UTF-8";
+.m-xs {
+  margin: 0.625rem;
+}
+.p-xs {
+  padding: 0.625rem;
+}
+/*flex */
+.flex-row {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0.625rem;
+}
+.flex-grid,
+.flex-grid-full,
+.flex-grid-2,
+.flex-grid-3,
+.flex-grid-4,
+header,
+footer,
+.grail-body-left,
+.grail-body-content,
+.grail-body-right {
+  padding: 0.625rem;
+  margin: 0.625rem;
+}
+.flex-grid {
+  flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+}
+.flex-grid-full {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+.flex-grid-2 {
+  -webkit-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+}
+.flex-grid-3 {
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+}
+.flex-grid-4 {
+  -webkit-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+}
+/*grail */
+.grail {
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem;
+}
+header,
+footer {
+  flex: 1;
+  height: 30px;
+}
+.grail-body {
+  display: flex;
+}
+.grail-body-content {
+  flex: 1;
+}
+.grail-body-left,
+.grail-body-right {
+  flex: 0 0 12em;
+}
+/*媒介查询*/
+@media (min-width: 48em) {
+}
+@media (min-width: 62em) {
+}
+@media (min-width: 75em) {
+}
+/*# sourceMappingURL=FlexUi.css.map */
