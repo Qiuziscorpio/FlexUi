@@ -14,8 +14,7 @@
 @import "MarginPadding.less";
 
 
-
-/*flex */
+/* flex */
 .flex-row{
     display: -webkit-flex;
     display: flex;
@@ -30,7 +29,8 @@ header,
 footer,
 .grail-body-left,
 .grail-body-content,
-.grail-body-right{
+.grail-body-right
+{
     .p-xs;
     .m-xs;
 }
@@ -60,32 +60,55 @@ footer,
     flex:0 0 20%;
 }
 
-/*grail */
+/* grail */
 .grail{
     display: flex;
     flex-direction: column;
     .m-xs;
+    header,
+    footer{
+        flex: 1;
+        height: 30px;
+    }
+    .grail-body{
+        display: flex;
+        .grail-body-content{
+            flex:1;
+        }
+        .grail-body-left,
+        .grail-body-right{
+            flex:0 0 12em;
+        }    
+    }    
+    
 }
-header,
-footer{
-    flex: 1;
-    height: 30px;
-}
-.grail-body{
+
+/* forminput  */
+.forminput{
     display: flex;
-}
-.grail-body-content{
-    flex:1;
-}
-.grail-body-left,
-.grail-body-right{
-    flex:0 0 12em;
+     .m-xs;
+     .forminput-item,
+     .forminput-input{
+         .p-xs;
+     }
+     .forminput-input{
+         flex: 1;
+     }
 }
 
-
-
-/*媒介查询*/
-@media (min-width: 48em) {
+/* @media */
+@media (max-width: 34em) {
+}
+@media (max-width: 48em) {
+    .grail-body{
+        flex-direction:column ;
+        flex: 1;
+    }
+    .grail-body-left,
+    .grail-body-content,
+    .grail-body-right{
+        flex: auto;
+    }    
 }
 @media (min-width: 62em) {
 }

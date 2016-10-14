@@ -16,7 +16,7 @@
 .p-xs {
   padding: 0.625rem;
 }
-/*flex */
+/* flex */
 .flex-row {
   display: -webkit-flex;
   display: flex;
@@ -60,29 +60,52 @@ footer,
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
 }
-/*grail */
+/* grail */
 .grail {
   display: flex;
   flex-direction: column;
   margin: 0.625rem;
 }
-header,
-footer {
+.grail header,
+.grail footer {
   flex: 1;
   height: 30px;
 }
-.grail-body {
+.grail .grail-body {
   display: flex;
 }
-.grail-body-content {
+.grail .grail-body .grail-body-content {
   flex: 1;
 }
-.grail-body-left,
-.grail-body-right {
+.grail .grail-body .grail-body-left,
+.grail .grail-body .grail-body-right {
   flex: 0 0 12em;
 }
-/*媒介查询*/
-@media (min-width: 48em) {
+/* forminput  */
+.forminput {
+  display: flex;
+  margin: 0.625rem;
+}
+.forminput .forminput-item,
+.forminput .forminput-input {
+  padding: 0.625rem;
+}
+.forminput .forminput-input {
+  flex: 1;
+}
+/* @media */
+@media (max-width: 34em) {
+}
+@media (max-width: 48em) {
+  .grail-body {
+    flex-direction: column;
+    flex: 1;
+  }
+  .grail-body-left,
+  .grail-body-content,
+  .grail-body-right {
+    flex: auto;
+  }
 }
 @media (min-width: 62em) {
 }
