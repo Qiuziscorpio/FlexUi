@@ -29,7 +29,8 @@ header,
 footer,
 .grail-body-left,
 .grail-body-content,
-.grail-body-right
+.grail-body-right,
+.panel-vertical-content
 {
     .p-xs;
     .m-xs;
@@ -95,6 +96,42 @@ footer,
          flex: 1;
      }
 }
+
+/* panel-level */
+.panel-level{
+    display: flex;
+    align-items: flex-start;
+    .panel-level-items{
+        margin-right: 1em;
+    }
+    .panel-level-body{
+        flex: 1;
+    }
+}
+
+/* panel-vertical */
+.panel-vertical{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    .panel-vertical-content{
+        flex: 1;
+    }    
+}
+
+/* stream */
+.stream{
+    display: flex;
+    flex-flow:row wrap ;
+    align-content: flex-start;
+    .m-xs
+}
+.stream-child{
+    flex: 0 0 21.4%;
+    .m-xs;
+    .p-xs
+}
+
 
 /* @media */
 @media (max-width: 34em) {

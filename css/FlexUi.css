@@ -31,7 +31,8 @@ header,
 footer,
 .grail-body-left,
 .grail-body-content,
-.grail-body-right {
+.grail-body-right,
+.panel-vertical-content {
   padding: 0.625rem;
   margin: 0.625rem;
 }
@@ -92,6 +93,38 @@ footer,
 }
 .forminput .forminput-input {
   flex: 1;
+}
+/* panel-level */
+.panel-level {
+  display: flex;
+  align-items: flex-start;
+}
+.panel-level .panel-level-items {
+  margin-right: 1em;
+}
+.panel-level .panel-level-body {
+  flex: 1;
+}
+/* panel-vertical */
+.panel-vertical {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.panel-vertical .panel-vertical-content {
+  flex: 1;
+}
+/* stream */
+.stream {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  margin: 0.625rem;
+}
+.stream-child {
+  flex: 0 0 21.4%;
+  margin: 0.625rem;
+  padding: 0.625rem;
 }
 /* @media */
 @media (max-width: 34em) {
